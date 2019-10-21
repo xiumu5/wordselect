@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.xm.asktao.mapper.NewsMapper">
+    <select id="selectAll" resultType="org.xm.asktao.pojo.News">
+        select * from news;
+    </select>
+
+    <select id="getById" resultType="org.xm.asktao.pojo.News">
+        select * from news where id = #{id};
+    </select>
+
+</mapper>
